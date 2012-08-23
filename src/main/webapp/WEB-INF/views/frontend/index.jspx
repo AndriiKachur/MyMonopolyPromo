@@ -1,0 +1,39 @@
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:tiles="http://tiles.apache.org/tags-tiles"
+	xmlns:spring="http://www.springframework.org/tags"
+	xmlns:util="urn:jsptagdir:/WEB-INF/tags/util" version="2.0">
+	<jsp:output omit-xml-declaration="yes" />
+	<jsp:directive.page contentType="text/html;charset=UTF-8" />
+	<jsp:directive.page pageEncoding="UTF-8" />
+
+	<jsp:directive.include file="/WEB-INF/views/frontend/top_menu.jspx" />
+
+	<div class="container">
+		<!-- Main hero unit for a primary marketing message or call to action -->
+
+		<div class="hero-unit">
+			<h2>MyMonopoly.net</h2>
+			<img
+				src="http://upload.wikimedia.org/wikipedia/en/f/f9/Monopoly_pack_logo.png"></img>
+			<p>We want to create online version of this great game. Stay
+				tuned!</p>
+			<p>Мы собираемся сделать онлайн версию замечательной игры
+				Монополия. оставайтесь с нами!</p>
+
+			<br /> <a class="btn btn-primary" target="_blank"
+				href="http://en.wikipedia.org/wiki/Monopoly_(game)">Learn more
+				>></a> <br />
+			<center>
+				<form method="post">
+					<input type="email" size="30" name="email"
+						class="input input-xlarge" /> <br /> <input type="submit"
+						value="Subscribe" class="btn btn-primary btn-large" />
+				</form>
+			</center>
+
+		</div>
+
+	</div>
+
+</jsp:root>

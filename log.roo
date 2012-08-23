@@ -1,0 +1,22 @@
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-08-01 21:17:19
+project --topLevelPackage net.mymonopoly.promo --projectName promo_page --java 6 --packaging JAR
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-08-01 21:17:21
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-08-01 21:17:25
+jpa setup --provider HIBERNATE --database MYSQL --databaseName promo
+hint
+entity jpa --class net.mymonopoly.promo.Email --testAutomatically 
+entity jpa --class net.mymonopoly.promo.BrowserHeaders --testAutomatically 
+field string --fieldName name
+// [failed] field string --fieldName value
+field string --fieldName val
+focus --class ~.Email 
+field string --fieldName email
+web mvc setup
+focus --class ~.BrowserHeaders
+field reference --fieldName email --type ~.Email
+focus --class ~.Email 
+finder list 
+finder add --finderName findEmailsByEmailEquals
+// [failed] field date --fieldName date --type java.util.Date
+field date --fieldName subscribeDate --type java.util.Date
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-08-02 00:13:40
