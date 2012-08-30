@@ -25,7 +25,7 @@ body {
 
 <spring:message code="application_name" var="app_name"
 	htmlEscape="false" />
-<title>MyMonopoly.net Promo Site</title>
+<title>MyMonopoly.net - Are you waiting?</title>
 
 <c:url value="/js/GoogleAnalytics.js" var="url" />
 <script type="text/javascript" src="${url}">

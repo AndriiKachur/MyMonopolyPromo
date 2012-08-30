@@ -9,28 +9,64 @@
 
 	<jsp:directive.include file="/WEB-INF/views/frontend/top_menu.jspx" />
 
-	<div class="container">
-		<!-- Main hero unit for a primary marketing message or call to action -->
 
+	<div class="container">
 		<div class="hero-unit">
-			<h2>MyMonopoly.net</h2>
-			<img
-				src="http://upload.wikimedia.org/wikipedia/en/f/f9/Monopoly_pack_logo.png"></img>
+			<h1>MyMonopoly.net</h1>
+			<center>
+				<c:url value="/images/monopoly_logo.png" var="url"/>
+				<img src="${url}"/>
+			</center><br/>
 			<p>We want to create online version of this great game. Stay
 				tuned!</p>
 			<p>Мы собираемся сделать онлайн версию замечательной игры
-				Монополия. оставайтесь с нами!</p>
-
-			<br /> <a class="btn btn-primary" target="_blank"
-				href="http://en.wikipedia.org/wiki/Monopoly_(game)">Learn more
-				>></a> <br />
+				Монополия. Оставайтесь с нами!</p>
+			<div class="row">
+			<div class="span3">
+				<a class="btn btn-primary" target="_blank"
+				href="http://en.wikipedia.org/wiki/Monopoly_(game)">Learn more about a game
+				>></a> 
+			</div>
+			<div class="span3" style="margin-left: 15px;">
+				<a class="btn btn-primary" target="_blank"
+				href="http://ru.wikipedia.org/wiki/%D0%9C%D0%BE%D0%BD%D0%BE%D0%BF%D0%BE%D0%BB%D0%B8%D1%8F_(%D0%B8%D0%B3%D1%80%D0%B0)">Узнать больше об игре
+				>></a> 
+			</div>
+			</div>
+			<div class="row">
+				<jsp:text/>
+			</div>
+			<div class="row">
 			<center>
 				<form method="post">
-					<input type="email" size="30" name="email"
+					<input type="email" size="30" name="email" placeholder="Email"
 						class="input input-xlarge" /> <br /> <input type="submit"
-						value="Subscribe" class="btn btn-primary btn-large" />
+						value="Subscribe/Подписаться" class="btn btn-primary btn-large" />
 				</form>
 			</center>
+			</div>
+			<div class="row">
+				<div class="span3">
+					<div
+						class="addthis_toolbox addthis_default_style addthis_32x32_style">
+						<a class="addthis_button_preferred_1"><jsp:text/></a> <a
+							class="addthis_button_preferred_2"><jsp:text/></a> <a
+							class="addthis_button_preferred_3"><jsp:text/></a> <a
+							class="addthis_button_preferred_4"><jsp:text/></a> <a
+							class="addthis_button_compact"><jsp:text/></a> <a
+							class="addthis_counter addthis_bubble_style"><jsp:text/></a>
+					</div>
+					<script type="text/javascript">
+						var addthis_config = {
+							"data_track_addressbar" : true
+						};
+					</script>
+					<script type="text/javascript"
+						src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-5036a59a7bbb6a3c"><jsp:text/></script>
+				</div>
+			
+			
+			</div>
 
 		</div>
 
